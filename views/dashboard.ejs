@@ -1,0 +1,19 @@
+
+<% include('./partials/header.ejs') %>
+<link rel="stylesheet" href="/dashboard.css">
+<% include('./partials/center.ejs') %>
+
+<div class="dashboard-container">
+    <h1>Welcome to Dashboard</h1>
+
+    <div class="user-info">
+        <h2>Name: <%= user.name %></h2>
+        <h2>Email: <%= user.email %></h2>
+    </div>
+
+    <a href="/logout" class="logout-link">Logout</a>
+</div>
+
+<% include('./partials/footer.ejs') %>
+
+
